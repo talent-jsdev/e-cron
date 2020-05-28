@@ -5,7 +5,7 @@ const fs = require("fs");
 app = express();
 
 
-cron.schedule("* * * * *", function() {
+cron.schedule("*/5 * * * * *", function() {
     console.log("running a task");
 })
 
